@@ -1,0 +1,10 @@
+#wrap .sjx {
+  width: 0;
+  height: 0;
+  border: 20px solid #f00;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: #f00;
+}

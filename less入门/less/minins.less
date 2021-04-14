@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#wrap {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #000;
+
+  .inner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    &:nth-child(1) {
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+    }
+
+    &:nth-child(2) {
+      width: 70px;
+      height: 70px;
+      background-color: deepskyblue;
+    }
+  }
+}

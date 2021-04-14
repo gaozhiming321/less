@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+@fontSize:20px;
+@width:600px;
+@color:purple;
+@psition:0;
+.wrap {
+  width: @width;
+  height: @width;
+  border: 1px solid @color;
+  position: relative;
+
+  .box1 {
+    width: 200px;
+    height: 200px;
+    background-color: @color;
+    position: absolute;
+    top: @psition;
+    left: @psition;
+    bottom: @psition;
+    right: @psition;
+    margin: auto;
+    span{
+      color:#fff;
+      font-size:@fontSize;
+    }
+  }
+
+  .box2 {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    top: @psition;
+    left: @psition;
+    bottom: @psition;
+    right: @psition;
+    margin: auto;
+    a{
+      color:#f00;
+      text-decoration:none;
+      display:block;
+      text-align:center;
+      line-height:100px;
+    }
+    &:hover{
+      background-color: @color;
+    }
+  }
+}

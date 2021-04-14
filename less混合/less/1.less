@@ -1,0 +1,58 @@
+//输出的混合不带(),基本混合
+//不输出的混合带()
+.font_hn(){
+  color:red;
+  font-family: 'Courier New', Courier, monospace;
+}
+h1{
+  font-size:28px;
+  .font_hn
+}
+h2{
+  font-size:18px;
+  .font_hn
+}
+
+//带选择器的混合
+.my-hover(){
+  &:hover{
+    border:1px solid red;
+  }
+}
+
+h1{
+  .my-hover()
+}
+
+//带参数混合
+.border(@color){
+  border:1px solid @color;
+}
+h1{
+  &:hover{
+    .border(green)
+  }
+}
+h2{
+  &:hover{
+    .border(#000)
+  }
+}
+
+//带参数并且有默认值的混合
+
+.border-you(@color:red){
+  border:1px solid @color;
+}
+
+h1{
+  &:hover{
+    .border-you()
+  }
+}
+
+h2{
+  &:hover{
+    .border-you(yellow)
+  }
+}

@@ -1,0 +1,34 @@
+// @_定义三角形的公共部分
+.sjx(@_, @W, @c) {
+  width: 0;
+  height: 0;
+  border: @W solid @c;
+  border-left-color:transparent;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+
+//定义三角形的分支
+
+.sjx(L, @w, @c) {
+  border-left-color: @c;
+}
+
+.sjx(R, @w, @c) {
+  border-right-color: @c;
+}
+
+.sjx(B, @w, @c) {
+  border-bottom-color: @c;
+}
+
+.sjx(T, @w, @c) {
+  border-top-color: @c;
+}
+
+
+#wrap .sjx {
+
+  .sjx(B, 20px, #f00)
+}

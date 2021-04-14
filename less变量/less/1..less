@@ -1,0 +1,32 @@
+//变量延时加载 
+
+@purple: purple;
+@color: yellow;
+
+header {
+  background-color: @purple;
+
+  h1 {
+    color: @color;
+  }
+}
+
+//作为选择器和属性名的变量
+//即是选择器又是属性名
+@kuandu: width;
+
+.@{kuandu} {
+  @{kuandu}: 150px;
+}
+
+//作为URL的变量
+@imgURL: "3.png";
+
+header {
+  background:url("../@{imgURL}");
+  height: 500px;
+}
+
+//定义多个相同名称的变量时,在同一个作用域里,取最新定义的那一个
+
+

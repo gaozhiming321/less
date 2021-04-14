@@ -1,0 +1,13 @@
+header {
+  background-color: purple;
+}
+header h1 {
+  color: yellow;
+}
+.width {
+  width: 150px;
+}
+header {
+  background: url("../3.png");
+  height: 500px;
+}
